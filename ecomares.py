@@ -13,17 +13,18 @@ def exibir_programa (): # Função para exibir o programa | Site para pegar font
 # Exibindo as opções do menu principal
 def exibir_opcoes(opcoes): 
     print("Escolha uma das opções abaixo: \n")   
-    while True:
+    while True: #Utilizando while True para garantir que o usuário escolha uma opção válida
         for opcao in opcoes:
             print(opcao)
 
         escolha = input("Por favor, escolha uma opção: ")
-        if escolha in [str(i+1) for i in range(len(opcoes))]:
+        if escolha in [str(i+1) for i in range(len(opcoes))]: #Verifica se a escolha existe na lista, onde N é o número de opções
             break
         else:
             print("Opção inválida. Por favor, tente novamente.\n")
     return int(escolha) - 1 #Converte a escolha do usuário para um índice valido
 
+#Fun;cão principal do programa
 def main():
     exibir_programa()
     
@@ -34,8 +35,8 @@ def main():
         "4 - Saiba como você pode ajudar",
         "5 - Conheça a equipe EcoMares",
         "6 - Sair\n" ]
-    
-    funcoes = [problema_o20, solucao_ecomares, beneficios_ecomares, como_ajudar, equipe_ecomares, sair] # Lisa de funções que serão chamadas de acordo com a escolha do usuário
+    # Lista de funções que serão chamadas de acordo com a escolha do usuário
+    funcoes = [problema_o20, solucao_ecomares, beneficios_ecomares, como_ajudar, equipe_ecomares, sair] 
 
     while True:
         escolha = exibir_opcoes(opcoes)
@@ -218,7 +219,7 @@ def equipe_ecomares():
                 "Ama ler mangas e assistir séries e filmes. Além de que comida gostosa é minha maior felicidade. \n")
             
             print("Acesse suas mídias socias: \n"
-                "GitHub: https://github.com/triz14 | LinkedIn:https://www.linkedin.com/in/beatriznovais/ \n")             
+                "GitHub: https://github.com/triz14 | LinkedIn: https://www.linkedin.com/in/beatriznovais/ \n")             
             break
         else: 
             print("Resposta inválida. Por favor, responda com 'm' para Mariana ou 'b' para Beatriz.")
