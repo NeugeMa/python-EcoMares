@@ -153,9 +153,9 @@ def como_ajudar():
     
     #Perguntando ao usuário se ele gostaria de ajudar 
     while True:
-        resposta = input("Você gostaria de ajudar? (s/n): ")
+        resposta = input("Você gostaria de ajudar? Escolhe entre ajuda(a) ou formulário (f): ")
 
-        if resposta.lower() == 's': #Explicando como a ajuda dele será importante!
+        if resposta.lower() == 'a': #Explicando como a ajuda dele será importante!
             print("Que bom, que tenha escolhido está opção.. Já que toda ajuda é sempre bem-vinda <3") 
             print("A conservação dos oceanos é uma responsabilidade compartilhada que começa com pequenas ações no dia a dia. Aqui estão algumas maneiras pelas quais uma pessoa comum pode contribuir para a limpeza do oceano, integrando essas práticas em sua rotina: \n")
             
@@ -177,19 +177,19 @@ def como_ajudar():
             
             print("Agora você possui uma base do que fazer, ficamos felizes em poder contribuir a um futuro mais azul \n")
             break
-        elif resposta.lower() == 'n': #Caso o usuário não queira ajudar, ele pode contribuir com um forms de avaliação
+        elif resposta.lower() == 'f': #Caso o usuário não queira ajudar, ele pode contribuir com um forms de avaliação
             print("Preparamos um fórmulario de avaliação para você! Avalie e deixe um feedback, para nós <3")
             
             nome = input("Como gostaria de ser chamado?: ")
             print(f"Obrigado, {nome}! Sua opinião é muito importante para nós. Por favor, responda às seguintes perguntas: \n")
                 
-            avaliacao = input("1. Como você avaliaria o projeto EcoMares? (1-5): ")
-            feedback = input("2. O que você achou do projeto EcoMares? ")
+            avaliacao = int(input("1. Como você avaliaria o projeto EcoMares? (1-5): "))
+            feedback = input("2. Escreva um pouco do que acha sobre o projeto EcoMares? ")
             sugestao = input("2. O que você acresentaria no projeto EcoMares? ")
             recomendacao = input("3. Você recomendaria o projeto EcoMares para outras pessoas? (s/n): ")
             
             resultado = print(f"Obrigado por avaliar o projeto EcoMares, {nome}! \n"
-                            f"Suas respostas foram: \n | {avaliacao} | \n | {feedback} | \n | {sugestao} | \n | {recomendacao} | \n"
+                            f"Suas respostas foram: \n -{avaliacao} \n -{feedback} \n -{sugestao} \n -{recomendacao} \n"
                             "Agradecemos por sua participação e feedback!")
             print("Respostas Enviadas!")
             break
@@ -205,17 +205,24 @@ def equipe_ecomares():
     while True:
         resposta = input("Quem você gostaria de ver? Mariana (m) ou Beatriz (b): ")
         if resposta.lower() == 'm':
-            print("oii mariana")
-        
+            print("Conheça Mariana Neugebauer Dourado: \n")
+            print("Foi responsável pela criação do Front-End + WebDevelopment | desenvolvimento da aplicação em Python | Criadora da persona, responsável por todo o design e história. \n"
+            "Sendo uma pessoa simpática e muito carismática, que adora ajudar as pessoas e sempre está disposta a aprender coisas novas. \n")
+            
+            print("Acesse suas mídias socias: \n"
+                "GitHub: https://github.com/NeugeMa | LinkedIn: https://www.linkedin.com/in/neugema/ \n")
             break 
         elif resposta.lower() == 'b':
-            print("oii beatriz")
+            print("Conheça Beatriz Vieira de Novais: \n")
+            print("Responsável pela criação do projeto em Arduino | produzindo cálculo | e desenvolvimento do backlog. \n"
+                "Ama ler mangas e assistir séries e filmes. Além de que comida gostosa é minha maior felicidade. \n")
             
+            print("Acesse suas mídias socias: \n"
+                "GitHub: https://github.com/triz14 | LinkedIn:https://www.linkedin.com/in/beatriznovais/ \n")             
             break
         else: 
             print("Resposta inválida. Por favor, responda com 'm' para Mariana ou 'b' para Beatriz.")
     
 def sair():
     print("Obrigado por participar do Projeto EcoMares! Até a próxima!")
-
 main()
