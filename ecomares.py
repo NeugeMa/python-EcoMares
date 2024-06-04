@@ -47,9 +47,10 @@ def main():
     
 # Função sobre o problema proposto pela Ocean 20 (O20) 
 def problema_o20():
-    print("""
+    print("""   
 █▀█ █▀█ █▀█ █▄▄ █░░ █▀▀ █▀▄▀█ ▄▀█   █▀█ █▀▀ █▀▀ ▄▀█ █▄░█   ▀█ █▀█   ▄▀ █▀█ ▀█ █▀█ ▀▄ ▀
-█▀▀ █▀▄ █▄█ █▄█ █▄▄ ██▄ █░▀░█ █▀█   █▄█ █▄▄ ██▄ █▀█ █░▀█   █▄ █▄█   ▀▄ █▄█ █▄ █▄█ ▄▀ ▄""")
+█▀▀ █▀▄ █▄█ █▄█ █▄▄ ██▄ █░▀░█ █▀█   █▄█ █▄▄ ██▄ █▀█ █░▀█   █▄ █▄█   ▀▄ █▄█ █▄ █▄█ ▄▀ ▄
+""")
     
     print("\nFundamentais para a biodiversidade do planeta, os oceanos enfrentam enormes desafios como as ameaças aos ecossistemas marinhos, poluição, mudanças climáticas, entre outros, causando impacto direto na economia global. À medida que esses problemas ambientais aumentam, o mundo precisa cada vez mais de nós. \n")
     
@@ -100,13 +101,9 @@ def solucao_ecomares():
                 
                 #Apresentando público-alvo
                 print("01. Jovens Estudantes e Universitários: ")
+                print("Perfil: Estudantes de ensino médio e universitários em cursos relacionados à ciência, biologia, ecologia, engenharia ambiental e áreas afins. \n")
+                print("Interrese: Envolver-se em projetos de monitoramento ambiental, realizar pesquisas e participar de atividades práticas de conservação. \n")
                 print("Objetivo: Proporcionar uma base educacional sólida em ciências ambientais e incentivar a participação ativa em projetos de monitoramento e conservação marinha. \n")
-
-                print("02. Cidadãos Adultos Conscientes: ")
-                print("Objetivo: Conscientizar sobre a importância da conservação oceânica e incentivar a participação em atividades de preservação, como campanhas de limpeza de praias e oficinas de reciclagem. \n")
-                
-                print("03. Pesquisadores e Especialistas Ambientais:")
-                print("Objetivo: Utilizar os dados fornecidos pela plataforma para conduzir pesquisas científicas, desenvolver políticas de conservação e implementar medidas de preservação ambiental. \n")
                 
             elif resposta == '3':
                 break
