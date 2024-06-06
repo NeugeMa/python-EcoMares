@@ -22,6 +22,16 @@ Nosso programa utiliza um menu com seis funções para o nosso usuário escolher
 
 Explicando funções: 
 
+exibir_programa()
+Sendo responsável por exibir uma mensagem de boas-vindas ao programa, juntamente com um logotipo do projeto EcoMares. 
+Essa função não recebe nenhum argumento e simplesmente imprime as mensagens na tela.
+
+exibir_opcoes(opcoes) 
+Responsável por exibir as opções do menu principal para o usuário e solicitar que ele escolha uma opção válida. Utilizamos uma lista de opções que junto de um loop while True para garantir que o usuário escolha uma o
+pção válida.
+Dentro do loop, as opções são exibidas na tela e a escolha do usuário é lida através da função input().
+Se a escolha do usuário for válida, o loop é interrompido e a função retorna o índice da opção escolhida. Caso contrário, uma mensagem de erro é exibida e o loop continua.
+
 função main() sendo a função principal do programa. Ela chama todas as funções.. 
 A função exibir_programa() ⭣
 Exibe uma função de boas-vindas e imprime um texto estilizado. 
@@ -34,11 +44,6 @@ Existem outras funções no código, como problema_020() | solucao_ecomares() | 
 como_ajudar() | equipe_ecomares() | sair()
 sendo chamadas de acordo com a escolha do usuário no menu. Cada uma das funções exibe informações sobre o projeto. 
 
-## Autores 
-
-- [@NeugeMa](https://www.github.com/NeugeMa)
-- [Mariana Neugebauer Dourado](https://www.linkedin.com/in/neugema/)
-
-- [@triz14](https://www.github.com/triz14)
-- [Beatriz Vieira de Novaiso](https://www.linkedin.com/in/beatriznovais/)
-
+Utilizando a lógica de programação nosso código usa while/ for para o controle de exibição do menu e a leitura do usuário.
+Utilizamos listas para armazenar as opções do menu e suas funções. 
+E por fim utilizamos condicionais para verificar se a escolha do usuário é válida e para decidir qual função chamar com base na escolha.
